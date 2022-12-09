@@ -1,3 +1,11 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      G00411275
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
 <ion-header>
   <ion-navbar>
     <ion-buttons left>
@@ -7,25 +15,17 @@
     </ion-buttons>
     <ion-title>G00411275</ion-title>
     <ion-buttons right>
-      <!-- <ion-toggle color="dark" (click)="toggleAppTheme()"></ion-toggle> -->
-      <ion-toggle color="dark" checked=" !statusTheme "></ion-toggle>
+      <ion-toggle color="dark" checked="fase"></ion-toggle>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
-    <ion-item text-wrap>
-      <h1><b>Quote from {{author}} about:</b></h1>
-      <ul>
-        <li *ngFor="let t of tags">{{ t }}</li>
-      </ul>
-      <h2><b>{{content}}</b></h2>
-    </ion-item>
-    <ion-item>
-      CountryID doesn't exist
-    </ion-item>
-  </ion-list>
+  <h1>Quote from {{author}} about:</h1>
+  <ul>
+    <li *ngFor="let t of tags">{{ t }}</li>
+  </ul>
+  <h2>{{content}}</h2>
 </ion-content>
 
 <ion-footer>

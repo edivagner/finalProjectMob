@@ -9,7 +9,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { QuotesProvider } from '../providers/quotes/quotes';
 import { SettingsPage } from "../pages/settings/settings";
-import { ThemeModeProvider } from '../providers/theme-mode/theme-mode';
 
 @NgModule({
   declarations: [
@@ -32,8 +31,7 @@ import { ThemeModeProvider } from '../providers/theme-mode/theme-mode';
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    QuotesProvider,
-    ThemeModeProvider
+    QuotesProvider
   ]
 })
 export class AppModule { }
