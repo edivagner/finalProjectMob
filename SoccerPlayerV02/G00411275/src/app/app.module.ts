@@ -9,6 +9,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { QuotesProvider } from '../providers/quotes/quotes';
 import { SettingsPage } from "../pages/settings/settings";
+import { IonicStorageModule } from "@ionic/storage";
+import { SportProvider } from '../providers/sport/sport';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { SettingsPage } from "../pages/settings/settings";
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -31,7 +34,8 @@ import { SettingsPage } from "../pages/settings/settings";
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    QuotesProvider
+    QuotesProvider,
+    SportProvider
   ]
 })
 export class AppModule { }

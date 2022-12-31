@@ -11,6 +11,7 @@ import { Observable } from "rxjs";
 @Injectable()
 export class QuotesProvider {
 
+
   constructor(public http: HttpClient) {
   }
 
